@@ -10,19 +10,19 @@ html {
   box-sizing: border-box;
 }
 
-/* Range slider — base track */
+/* ── Range slider ──────────────────────────────── */
+
 input[type='range'] {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
   height: 2px;
-  background: rgba(27, 67, 50, 0.3);
+  background: rgba(27, 67, 50, 0.2);
   outline: none;
   cursor: pointer;
   border-radius: 0;
 }
 
-/* Thumb — WebKit */
 input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -36,10 +36,9 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 input[type='range']::-webkit-slider-thumb:hover {
-  transform: scale(1.2);
+  transform: scale(1.25);
 }
 
-/* Thumb — Firefox */
 input[type='range']::-moz-range-thumb {
   width: 18px;
   height: 18px;
@@ -51,11 +50,27 @@ input[type='range']::-moz-range-thumb {
 }
 
 input[type='range']::-moz-range-thumb:hover {
-  transform: scale(1.2);
+  transform: scale(1.25);
 }
 
-/* Track fill — WebKit */
-input[type='range']::-webkit-slider-runnable-track {
-  height: 2px;
-  background: rgba(27, 67, 50, 0.3);
+/* ── Live pulse dot ────────────────────────────── */
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.25; }
+}
+
+.pulse-dot {
+  animation: blink 2s ease-in-out infinite;
+}
+
+/* ── CTA button hover ──────────────────────────── */
+
+.cta-btn {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cta-btn:hover {
+  background-color: #e76f51;
+  color: #f5f0e8;
 }
