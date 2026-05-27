@@ -17,9 +17,9 @@ const pillars = [
     pillar: 'SÄULE 01',
     category: 'Physisch',
     title: 'Pop-up-Programm',
-    short: 'Leerstehende Ladenlokale werden zur rotierenden Bühne für Händler und Gründer.',
+    short: '12 leerstehende Flächen werden zur rotierenden Bühne für Händler und Gründer.',
     expanded:
-      '6-Wochen-Residenzen, schlanke Mietverträge. CHF 2k Subvention/Slot. 24 Slots/Jahr. Ziel: 3 feste Mieter bis Monat 12. Jede Säule ist in 90 Tagen testbar.',
+      '6-Wochen-Kurzmieten zu subventionierten Konditionen. Monatliche Events: Streetfood-Märkte, Vintage-Flohmärkte, Konzerte. Conversion von 15–25 % der Pop-ups in Festmietverhältnisse. Ziel: 3 feste Mieter bis Monat 12.',
   },
   {
     pillar: 'SÄULE 02',
@@ -60,46 +60,46 @@ const evidence = [
 const phases = [
   {
     quarter: 'Q1',
-    label: 'GRUNDSTEIN',
+    label: 'FOUNDATION',
+    milestone: 'Plattform live ✓',
     items: [
-      'MOUs mit 7 Vermietern',
-      'Design + Recherche',
-      'Startkapital gesichert',
-      'Wöchentlicher Digest',
-      'Monatliche Retro',
-      'Vierteljährliche öffentliche Überprüfung',
+      'Coach eingestellt',
+      'Crossiety live',
+      '10 KMU auf Google',
+      '@newdinhard aktiv',
     ],
   },
   {
     quarter: 'Q2',
-    label: 'START',
+    label: 'LAUNCH',
+    milestone: 'Reichweite messbar ✓',
     items: [
-      'Kohorte 1 · 6 Mieter × 6 Wo.',
-      'PWA v0 entwickeln',
-      'Gutscheinbuch wird lanciert',
-      'App für Einwohner live',
+      'Event 1+2+3',
+      'Influencer-Start',
+      '10 weitere KMU',
+      '500 App-Nutzer',
     ],
   },
   {
     quarter: 'Q3',
-    label: 'ITERATION',
+    label: 'ITERATE',
+    milestone: '1. Festmieter ✓',
     items: [
-      'Kohorte 2 · 6 Mieter × 6 Wo.',
-      'Öffentliche Beta 12 Händler',
-      'v1.0 Vorbestellung & Events live',
-      'Erste Royalty eingezogen',
-      '100 Gutscheinbücher verkauft',
+      'Events 3–5',
+      '1. Festmietvertrag',
+      "1'000+ App-Nutzer",
+      'NRP-Antrag J2',
     ],
   },
   {
     quarter: 'Q4',
-    label: 'WACHSTUM',
+    label: 'SCALE',
+    milestone: 'Jahr 2 gesichert ✓',
     items: [
-      'Kohorte 3 · 6 Mieter × 6 Wo.',
-      'v1.0 Vorbestellung & Events live',
-      'Erste Royalty eingezogen',
-      'App für Einwohner live',
-      'Jahres-Retro für den Gemeinderat',
+      'Events 6–8',
+      '3 Festmieter',
+      'KMU-Fees aktiv',
+      'Self-funding ✓',
     ],
   },
 ]
@@ -259,9 +259,9 @@ export default function Page() {
               className="font-black leading-[0.88] tracking-tight"
               style={{ fontSize: 'clamp(4.5rem, 13vw, 14rem)' }}
             >
-              <span className="block" style={{ color: FOREST }}>Dinhard</span>
-              <span className="block" style={{ color: FOREST }}>kehrt zurück</span>
-              <span className="block" style={{ color: CORAL }}>ins Leben.</span>
+              <span className="block" style={{ color: FOREST }}>Bringing</span>
+              <span className="block" style={{ color: FOREST }}>NewDinhard</span>
+              <span className="block" style={{ color: CORAL }}>back to life.</span>
             </h1>
           </Reveal>
         </div>
@@ -304,14 +304,14 @@ export default function Page() {
         <Reveal>
           <SectionLabel>DIE DIAGNOSE</SectionLabel>
           <h2 className="font-bold leading-tight mb-16" style={{ fontSize: 'clamp(1.8rem, 4vw, 3.5rem)' }}>
-            Ein Dorf, das still ist — aber nicht leer.
+            Ein Dorf das still ist, aber nicht leer.
           </h2>
         </Reveal>
         <Divider />
         <div className="grid grid-cols-1 md:grid-cols-3">
           {[
             { stat: '–38%', label: 'Fussgängerfrequenz', sub: 'Wochentags-Durchschnitt 2019→2025' },
-            { stat: '7', label: 'Erdgeschoss-Leerstände', sub: 'Leerstehende oder ungenutzte Einheiten' },
+            { stat: '12', label: 'Erdgeschoss-Leerstände', sub: 'Leerstehende oder ungenutzte Flächen im Ortskern' },
             { stat: 'CHF 0', label: 'Digitaler Umsatz', sub: 'Kein lokaler Händler verkauft online an das Einzugsgebiet' },
           ].map((item, i) => (
             <Reveal key={i} delay={i * 100}>
@@ -520,9 +520,9 @@ export default function Page() {
                     <div className="text-lg font-black mb-4">{ph.label}</div>
                     <div
                       className="overflow-hidden"
-                      style={{ maxHeight: isOpen ? '360px' : '0', transition: 'max-height 0.35s ease' }}
+                      style={{ maxHeight: isOpen ? '400px' : '0', transition: 'max-height 0.35s ease' }}
                     >
-                      <ul className="pt-5 border-t space-y-2" style={{ borderColor: `${FOREST}20` }}>
+                      <ul className="pt-5 border-t space-y-2 mb-4" style={{ borderColor: `${FOREST}20` }}>
                         {ph.items.map((item, j) => (
                           <li key={j} className="flex items-start gap-2 text-sm">
                             <span style={{ color: CORAL, lineHeight: '1.5' }}>·</span>
@@ -530,6 +530,12 @@ export default function Page() {
                           </li>
                         ))}
                       </ul>
+                      <div
+                        className="text-[10px] font-black tracking-wider py-1 px-2 inline-block"
+                        style={{ backgroundColor: FOREST, color: CREAM }}
+                      >
+                        {ph.milestone}
+                      </div>
                     </div>
                     <div className="text-[10px] tracking-[0.25em] uppercase font-black mt-5" style={{ color: CORAL }}>
                       {isOpen ? '↑ SCHLIESSEN' : '↓ MEHR'}
