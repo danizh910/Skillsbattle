@@ -6,7 +6,17 @@ const inter = Inter({ subsets: ['latin'], weight: ['400', '700', '900'] })
 
 export const metadata: Metadata = {
   title: 'NewDinhard Live — Executive Briefing',
-  description: 'Business Plan V1.0 — Bringing Dinhard back to life. CHF 100,000 · 12 Months · ZH-8474.',
+  description: 'Businessplan V1.0 — Dinhard kehrt zurück ins Leben. CHF 100\'000 Budget · 12 Monate · ZH-8474.',
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
+  openGraph: {
+    title: 'NewDinhard Live — Executive Briefing',
+    description: 'Ein Programm. Drei Säulen. Ein Feedback-Loop. Skills Battle 2026.',
+    type: 'website',
+    locale: 'de_CH',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
