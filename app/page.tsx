@@ -10,74 +10,74 @@ const CORAL = '#E76F51'
 
 const pillars = [
   {
-    pillar: 'PILLAR 01',
-    category: 'Physical',
-    title: 'Pop-up Programme',
-    short: 'Empty storefronts become rotating stages for merchants and founders.',
+    pillar: 'SÄULE 01',
+    category: 'Physisch',
+    title: 'Pop-up-Programm',
+    short: 'Leerstehende Ladenlokale werden zur rotierenden Bühne für Händler und Gründer.',
     expanded:
-      '6-week residencies, light-touch leases. CHF 2k subsidy/slot. 24 slots/year. Target: 3 permanent tenants by Month 12. Each pillar is testable in 90 days.',
+      '6-Wochen-Residenzen, schlanke Mietverträge. CHF 2k Subvention/Slot. 24 Slots/Jahr. Ziel: 3 feste Mieter bis Monat 12. Jede Säule ist in 90 Tagen testbar.',
   },
   {
-    pillar: 'PILLAR 02',
+    pillar: 'SÄULE 02',
     category: 'Digital',
-    title: 'Digital Visibility',
-    short: "A live village layer — what's open, what's on, where to go.",
+    title: 'Digitale Sichtbarkeit',
+    short: 'Ein lebendiger Dorf-Layer — was offen ist, was läuft, wo man hingehen kann.',
     expanded:
-      'Google My Business for all 22 SMEs. @newdinhard TikTok/Instagram. 5–8 micro-influencers retainer model. Digital Coach 0.4 FTE. No app download required — PWA web app.',
+      'Google My Business für alle 22 KMU. @newdinhard TikTok/Instagram. 5–8 Micro-Influencer im Retainer-Modell. Digital Coach 0.4 FTE. Kein App-Download nötig — PWA-Web-App.',
   },
   {
-    pillar: 'PILLAR 03',
-    category: 'Financial',
-    title: 'Ecosystem Financing',
-    short: 'Micro-grants, matched community capital, re-investing royalty.',
+    pillar: 'SÄULE 03',
+    category: 'Finanziell',
+    title: 'Ökosystem-Finanzierung',
+    short: 'Mikrozuschüsse, gemeinschaftliches Kapital, reinvestierender Royalty.',
     expanded:
-      'Crossiety community platform CHF 13k/year. KMU listing fee CHF 40/month. Self-funded by Year 2. Seed pool CHF 60k from Gemeinde + kantonal Wirtschaftsförderung.',
+      'Crossiety Community-Plattform CHF 13k/Jahr. KMU-Listinggebühr CHF 40/Monat. Ab Jahr 2 selbstfinanziert. Startkapital CHF 60k von Gemeinde + kantonaler Wirtschaftsförderung.',
   },
 ]
 
 const phases = [
   {
     quarter: 'Q1',
-    label: 'FOUNDATION',
+    label: 'GRUNDSTEIN',
     items: [
-      'MOUs with 7 landlords',
-      'Design + research',
-      'Seed pool secured',
-      'Weekly digest',
-      'Monthly retro',
-      'Quarterly public review',
+      'MOUs mit 7 Vermietern',
+      'Design + Recherche',
+      'Startkapital gesichert',
+      'Wöchentlicher Digest',
+      'Monatliche Retro',
+      'Vierteljährliche öffentliche Überprüfung',
     ],
   },
   {
     quarter: 'Q2',
-    label: 'LAUNCH',
+    label: 'START',
     items: [
-      'Cohort 1 · 6 tenants × 6 wks',
-      'Build v0 PWA',
-      'Voucher book launches',
-      'App live for residents',
+      'Kohorte 1 · 6 Mieter × 6 Wo.',
+      'PWA v0 entwickeln',
+      'Gutscheinbuch wird lanciert',
+      'App für Einwohner live',
     ],
   },
   {
     quarter: 'Q3',
-    label: 'ITERATE',
+    label: 'ITERATION',
     items: [
-      'Cohort 2 · 6 tenants × 6 wks',
-      'Public beta 12 merchants',
-      'v1.0 pre-order & events live',
-      'First royalty collected',
-      '100 voucher books sold',
+      'Kohorte 2 · 6 Mieter × 6 Wo.',
+      'Öffentliche Beta 12 Händler',
+      'v1.0 Vorbestellung & Events live',
+      'Erste Royalty eingezogen',
+      '100 Gutscheinbücher verkauft',
     ],
   },
   {
     quarter: 'Q4',
-    label: 'SCALE',
+    label: 'WACHSTUM',
     items: [
-      'Cohort 3 · 6 tenants × 6 wks',
-      'v1.0 pre-order & events live',
-      'First royalty collected',
-      'App live for residents',
-      'Year-1 retro to Council',
+      'Kohorte 3 · 6 Mieter × 6 Wo.',
+      'v1.0 Vorbestellung & Events live',
+      'Erste Royalty eingezogen',
+      'App für Einwohner live',
+      'Jahres-Retro für den Gemeinderat',
     ],
   },
 ]
@@ -138,7 +138,7 @@ export default function Page() {
             className="text-[10px] tracking-[0.25em] uppercase font-bold"
             style={{ color: FOREST, opacity: 0.45 }}
           >
-            NEWDINHARD LIVE · Business Plan V1.0
+            NEWDINHARD LIVE · Businessplan V1.0
           </span>
         </div>
 
@@ -149,13 +149,13 @@ export default function Page() {
             style={{ fontSize: 'clamp(4.5rem, 13vw, 14rem)' }}
           >
             <span className="block" style={{ color: FOREST }}>
-              Bringing
-            </span>
-            <span className="block" style={{ color: FOREST }}>
               Dinhard
             </span>
+            <span className="block" style={{ color: FOREST }}>
+              kehrt zurück
+            </span>
             <span className="block" style={{ color: CORAL }}>
-              back to life.
+              ins Leben.
             </span>
           </h1>
         </div>
@@ -165,10 +165,10 @@ export default function Page() {
           <Divider />
           <div className="flex flex-wrap gap-x-10 gap-y-2 mt-6 text-sm" style={{ color: FOREST }}>
             {[
-              ['Budget', 'CHF 100,000'],
-              ['Horizon', '12 Months'],
-              ['Location', 'ZH · CH-8474'],
-              ['Residents', '8,000'],
+              ['Budget', "CHF 100'000"],
+              ['Horizont', '12 Monate'],
+              ['Standort', 'ZH · CH-8474'],
+              ['Einwohner', "8'000"],
             ].map(([key, val]) => (
               <span key={key}>
                 <span style={{ opacity: 0.5 }}>{key} · </span>
@@ -180,26 +180,26 @@ export default function Page() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          2. THE DIAGNOSIS
+          2. DIE DIAGNOSE
       ═══════════════════════════════════════════ */}
       <section className="px-6 md:px-16 lg:px-24 py-24 border-t" style={{ borderColor: `${FOREST}20` }}>
-        <SectionLabel>THE DIAGNOSIS</SectionLabel>
+        <SectionLabel>DIE DIAGNOSE</SectionLabel>
         <h2
           className="font-bold leading-tight mb-16"
           style={{ fontSize: 'clamp(1.8rem, 4vw, 3.5rem)' }}
         >
-          A village that is quiet, but not empty.
+          Ein Dorf, das still ist — aber nicht leer.
         </h2>
 
         <Divider />
         <div className="grid grid-cols-1 md:grid-cols-3">
           {[
-            { stat: '–38%', label: 'Foot traffic', sub: 'Weekday avg 2019→2025' },
-            { stat: '7', label: 'Ground-floor vacancies', sub: 'Vacant or under-used units' },
+            { stat: '–38%', label: 'Fussgängerfrequenz', sub: 'Wochentags-Durchschnitt 2019→2025' },
+            { stat: '7', label: 'Erdgeschoss-Leerstände', sub: 'Leerstehende oder ungenutzte Einheiten' },
             {
               stat: 'CHF 0',
-              label: 'Digital revenue',
-              sub: 'No local merchant sells online to catchment area',
+              label: 'Digitaler Umsatz',
+              sub: 'Kein lokaler Händler verkauft online an das Einzugsgebiet',
             },
           ].map((item, i) => (
             <div
@@ -227,15 +227,15 @@ export default function Page() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          3. THE PROGRAMME
+          3. DAS PROGRAMM
       ═══════════════════════════════════════════ */}
       <section className="px-6 md:px-16 lg:px-24 py-24 border-t" style={{ borderColor: `${FOREST}20` }}>
-        <SectionLabel>THE PROGRAMME</SectionLabel>
+        <SectionLabel>DAS PROGRAMM</SectionLabel>
         <h2
           className="font-bold leading-tight mb-16"
           style={{ fontSize: 'clamp(1.8rem, 4vw, 3.5rem)' }}
         >
-          One programme. Three pillars. One feedback loop.
+          Ein Programm. Drei Säulen. Ein Feedback-Loop.
         </h2>
 
         <Divider />
@@ -264,7 +264,6 @@ export default function Page() {
                     {p.short}
                   </p>
 
-                  {/* expandable detail */}
                   <div
                     className="overflow-hidden"
                     style={{
@@ -280,12 +279,11 @@ export default function Page() {
                     </div>
                   </div>
 
-                  {/* toggle label */}
                   <div
                     className="text-[10px] tracking-[0.25em] uppercase font-black mt-5"
                     style={{ color: CORAL }}
                   >
-                    {isOpen ? '↑ CLOSE' : '↓ EXPAND'}
+                    {isOpen ? '↑ SCHLIESSEN' : '↓ MEHR'}
                   </div>
                 </div>
               </div>
@@ -295,23 +293,22 @@ export default function Page() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          4. KPI CALCULATOR
+          4. KPI-RECHNER
       ═══════════════════════════════════════════ */}
       <section className="px-6 md:px-16 lg:px-24 py-24 border-t" style={{ borderColor: `${FOREST}20` }}>
-        <SectionLabel>THE NUMBERS</SectionLabel>
+        <SectionLabel>DIE ZAHLEN</SectionLabel>
         <h2
           className="font-bold leading-tight mb-16"
           style={{ fontSize: 'clamp(1.8rem, 4vw, 3.5rem)' }}
         >
-          Move the sliders. See the model.
+          Schieberegler bewegen. Modell sehen.
         </h2>
 
         <Divider />
         <div className="grid grid-cols-1 md:grid-cols-3">
-          {/* Slider 1 — KMU */}
           <div className="py-12 pr-8">
             <SliderBlock
-              label="KMU paying listing fee"
+              label="KMU zahlen Listinggebühr"
               min={10}
               max={60}
               step={1}
@@ -320,17 +317,16 @@ export default function Page() {
               minLabel="10"
               maxLabel="60"
               output={fmtCHF(platformRevenue)}
-              outputSub="Annual platform revenue"
+              outputSub="Jährlicher Plattformumsatz"
             />
           </div>
 
-          {/* Slider 2 — Adoption */}
           <div
             className="py-12 pr-8 md:pl-8 border-t md:border-t-0"
             style={{ borderLeft: `1px solid ${FOREST}20`, borderTop: `1px solid ${FOREST}20` }}
           >
             <SliderBlock
-              label="Community adoption rate"
+              label="Community-Adoptionsrate"
               min={5}
               max={70}
               step={1}
@@ -338,18 +334,17 @@ export default function Page() {
               onChange={setAdoption}
               minLabel="5%"
               maxLabel="70%"
-              output={`${fmt(activeResidents)} residents`}
-              outputSub="Active platform users"
+              output={`${fmt(activeResidents)} Nutzer`}
+              outputSub="Aktive Plattformnutzer"
             />
           </div>
 
-          {/* Slider 3 — Conversion */}
           <div
             className="py-12 pr-8 md:pl-8 border-t md:border-t-0"
             style={{ borderLeft: `1px solid ${FOREST}20`, borderTop: `1px solid ${FOREST}20` }}
           >
             <SliderBlock
-              label="Pop-up → permanent conversion"
+              label="Pop-up → Dauervermietung"
               min={0}
               max={12}
               step={1}
@@ -357,23 +352,23 @@ export default function Page() {
               onChange={setConversion}
               minLabel="0"
               maxLabel="12"
-              output={`${newTenants} new tenant${newTenants !== 1 ? 's' : ''}`}
-              outputSub="New storefronts filled"
+              output={`${newTenants} ${newTenants === 1 ? 'Mieter' : 'Mieter'}`}
+              outputSub="Neue feste Ladenlokale"
             />
           </div>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════
-          5. 12-MONTH ROADMAP
+          5. 12-MONATS-ROADMAP
       ═══════════════════════════════════════════ */}
       <section className="px-6 md:px-16 lg:px-24 py-24 border-t" style={{ borderColor: `${FOREST}20` }}>
-        <SectionLabel>THE ARC</SectionLabel>
+        <SectionLabel>DER BOGEN</SectionLabel>
         <h2
           className="font-bold leading-tight mb-16"
           style={{ fontSize: 'clamp(1.8rem, 4vw, 3.5rem)' }}
         >
-          A clear twelve-month arc.
+          Ein klarer Zwölf-Monats-Bogen.
         </h2>
 
         <Divider />
@@ -399,7 +394,6 @@ export default function Page() {
                   </div>
                   <div className="text-lg font-black mb-4">{ph.label}</div>
 
-                  {/* expandable items */}
                   <div
                     className="overflow-hidden"
                     style={{
@@ -424,7 +418,7 @@ export default function Page() {
                     className="text-[10px] tracking-[0.25em] uppercase font-black mt-5"
                     style={{ color: CORAL }}
                   >
-                    {isOpen ? '↑ CLOSE' : '↓ EXPAND'}
+                    {isOpen ? '↑ SCHLIESSEN' : '↓ MEHR'}
                   </div>
                 </div>
               </div>
@@ -442,14 +436,14 @@ export default function Page() {
             className="font-black leading-tight mb-16"
             style={{ fontSize: 'clamp(2.5rem, 7vw, 6rem)' }}
           >
-            One village,<br />back on its feet.
+            Ein Dorf,<br />wieder auf den Beinen.
           </p>
           <div
             className="border-t pt-8 flex flex-col md:flex-row justify-between gap-3 text-sm"
             style={{ borderColor: `${CREAM}25`, opacity: 0.6 }}
           >
             <span>Skills Battle 2026 · EDB · NewDinhard Digital 2027</span>
-            <span>Full business plan available on request</span>
+            <span>Vollständiger Businessplan auf Anfrage erhältlich</span>
           </div>
         </div>
       </footer>
@@ -457,7 +451,7 @@ export default function Page() {
   )
 }
 
-/* ─────────────────── SliderBlock component ─────────────────── */
+/* ─────────────────── SliderBlock ─────────────────── */
 
 function SliderBlock({
   label,
